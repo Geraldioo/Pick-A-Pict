@@ -39,6 +39,7 @@ export default function Login() {
       (localStorage.uid = currentUser.uid),
         (localStorage.displayName = currentUser.displayName),
         (localStorage.photoUrl = "Untitled");
+        localStorage.email = email
       localStorage.access_token = currentUser.accessToken;
 
       navigate("/home");
